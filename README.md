@@ -23,3 +23,6 @@ The Snake class is responsible for representing the snake in the game and handli
 The player's input is captured using the keyPressed() function, which is called whenever a key is pressed on the keyboard. This function is responsible for updating the direction of the snake's movement based on the arrow keys that are pressed.
 
 Finally, the setup() function is called once at the beginning of the game and is responsible for setting up the canvas and initializing the game elements.
+
+### P5.js Sketch link
+https://editor.p5js.org/ghosh2003sayantan/sketches/WFY-bhUdV
