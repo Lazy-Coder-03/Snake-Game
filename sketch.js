@@ -38,7 +38,7 @@ function draw() {
   textSize(32);
   fill(255);
   text(`Score: ${score}`, 10, 30);
-  text(`Size: ${snake.tail.length}`, 10, 60);
+  text(`Size: ${snake.tail.length+1}`, 10, 60);
   if (gameOver) {
     textSize(64);
     fill(255, 0, 0);
@@ -93,11 +93,11 @@ class Snake {
         if (r < 0.01 + j) {
           //console.log(r,0.01+j);
 
-          this.tot = Math.max(0, this.tot - 10);
+          this.tot = Math.max(0, this.tot - 10);// decrease size by 10, but don't allow size to become negative
           score += 100;
         } else {
           //console.log(r,0.01+j);
-          this.tot = Math.max(0, this.tot - 2); // decrease size by 5, but don't allow size to become negative
+          this.tot = Math.max(0, this.tot - 2); // decrease size by 2, but don't allow size to become negative
           score += 10;
         }
       }
