@@ -38,7 +38,7 @@ function draw() {
   textSize(32);
   fill(255);
   text(`Score: ${score}`, 10, 30);
-  text(`Size: ${snake.tail.length+1}`, 10, 60);
+  //text(`Size: ${snake.tail.length+1}`, 10, 60);
   if (gameOver) {
     textSize(64);
     fill(255, 0, 0);
